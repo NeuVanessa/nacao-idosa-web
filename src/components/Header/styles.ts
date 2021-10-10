@@ -12,6 +12,7 @@ export const Container = styled.div`
   height: 80px;
   justify-content: center;
   align-items: center;
+  background: #f2b94a;
 `
 export const Navbar = styled.div`
   display: flex;
