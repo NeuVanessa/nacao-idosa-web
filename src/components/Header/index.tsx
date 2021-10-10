@@ -13,7 +13,7 @@ import {
   TextButton,
   BaseList
 } from "./styles";
-import { NavItem, Logo } from "./items";
+import { NavItem } from "./items";
 import Legal from "../../../public/images/legal.png";
 import { LogoMarca } from "../../../public/images/logo.jpg";
 import { SimpleButtom, Image } from "../Button";
