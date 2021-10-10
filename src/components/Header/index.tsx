@@ -23,6 +23,7 @@ import { GiDoctorFace } from "@react-icons/all-files/gi/GiDoctorFace";
 
 export const Header: React.FC = () => {
   return (
+    <> 
     <Wrapper>
       <Container>
         {/* <img
@@ -37,7 +38,6 @@ export const Header: React.FC = () => {
             display: "grid",
             textAlign: "center",
             justifyContent: "center",
-            marginRight: "2rem",
             gridTemplateColumns: "repeat(5, auto)",
             gridGap: "10px"
           }}
@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
           {NavItem.map((item, index) => {
             return (
               <List>
-                <Alink className={item.cName} href={item.url} key={index}>
+                <Alink className={item.cName} href={item.url} key={item.id}>
                   {item.title}
                 </Alink>
               </List>
@@ -53,9 +53,7 @@ export const Header: React.FC = () => {
           })}
         </BaseList>
         <SimpleButtom to="/">
-          <TextButton style={{ flexdirection: "row" }}>
-            ENTRE EM CONTATO{" "}
-          </TextButton>
+          <TextButton>ENTRE EM CONTATO </TextButton>
         </SimpleButtom>
       </Container>
 
@@ -147,5 +145,6 @@ export const Header: React.FC = () => {
         </div>
       </ContainerInfo>
     </Wrapper>
+     </>
   );
 };

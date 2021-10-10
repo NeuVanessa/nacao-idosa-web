@@ -1,6 +1,6 @@
 export const NavItem = [
-  { title: "A NAÇÃO", url: "/", cName: "nav-links" },
-  { title: "PERGUNTAS FREQUENTES", url: "/", cName: "nav-links" },
-  { title: "NOSOS VALORES", url: "/", cName: "nav-links" },
-  { title: "LOCALIZAÇÃO", url: "/", cName: "nav-links" }
+  { id: 1, title: "A NAÇÃO", url: "/", cName: "nav-links" },
+  { id: 2, title: "PERGUNTAS FREQUENTES", url: "/", cName: "nav-links" },
+  { id: 3, title: "NOSOS VALORES", url: "/", cName: "nav-links" },
+  { id: 4, title: "LOCALIZAÇÃO", url: "/", cName: "nav-links" }
 ];
