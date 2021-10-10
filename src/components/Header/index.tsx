@@ -7,7 +7,12 @@ import {
   Navbar,
   Links,
   Alink,
-  ContainerInfo
+  ContainerInfo,
+  Paragraph,
+  List,
+  Text,
+  TextButton,
+  BaseList
 } from "./styles";
 import { NavItem, Logo } from "./items";
 import Legal from "../../../public/images/legal.png";
@@ -25,7 +30,7 @@ export const Header: React.FC = () => {
           src={LogoMarca}
           style={{ width: 100, height: 40, overflow: "hidden" }}
         />
-        <ul
+        <BaseList
           style={{
             marginRight: "2rem",
             listStyle: "none",
@@ -40,16 +45,18 @@ export const Header: React.FC = () => {
         >
           {NavItem.map((item, index) => {
             return (
-              <li>
+              <List>
                 <Alink className={item.cName} href={item.url} key={index}>
                   {item.title}
                 </Alink>
-              </li>
+              </List>
             );
           })}
-        </ul>
+        </BaseList>
         <SimpleButtom to="/">
-          <h5 style={{ flexdirection: "row" }}>ENTRE EM CONTATO </h5>
+          <TextButton style={{ flexdirection: "row" }}>
+            ENTRE EM CONTATO{" "}
+          </TextButton>
         </SimpleButtom>
       </Container>
 
@@ -65,7 +72,7 @@ export const Header: React.FC = () => {
           }}
         />
       </div>
-      <h1
+      <Text
         style={{
           position: "relative",
           textAlign: "center",
@@ -75,7 +82,7 @@ export const Header: React.FC = () => {
         }}
       >
         Conheça o Lar de Idoso,<br /> Nação Idosa!
-      </h1>
+      </Text>
       <ContainerInfo>
         <div style={{ background: " #d6a747", width: "50%", height: "100%" }}>
           <MdAcUnit
@@ -83,7 +90,7 @@ export const Header: React.FC = () => {
             color="white"
             style={{ left: 40, position: "relative", top: 15 }}
           />
-          <p
+          <Paragraph
             style={{
               alignItems: "center",
               position: "relative",
@@ -92,10 +99,10 @@ export const Header: React.FC = () => {
               fontSize: 18
             }}
           >
-            <p> Mais Comodidade</p> Prezamos muito por bem-star,<br /> Nosso
-            ambiente é tranquilo e com <br />
+            <Paragraph> Mais Comodidade</Paragraph> Prezamos muito por bem-star,<br />{" "}
+            Nosso ambiente é tranquilo e com <br />
             otima acomodação.
-          </p>
+          </Paragraph>
         </div>
         <div style={{ background: " #f2b94a", width: "50%", height: "100%" }}>
           <HiSparkles
@@ -103,7 +110,7 @@ export const Header: React.FC = () => {
             color="white"
             style={{ left: 40, position: "relative", top: 15 }}
           />
-          <p
+          <Paragraph
             style={{
               alignItems: "center",
               position: "relative",
@@ -116,7 +123,7 @@ export const Header: React.FC = () => {
             Na Nação Idosa, não há preocupação,<br /> Nosso espaço conta com:
             Natação, hidroginástica,Alongamento,pilates.
             <br />
-          </p>
+          </Paragraph>
         </div>
 
         <div style={{ background: " #d6a747", width: "50%", height: "100%" }}>
@@ -125,7 +132,7 @@ export const Header: React.FC = () => {
             color="white"
             style={{ left: 40, position: "relative", top: 15 }}
           />
-          <p
+          <Paragraph
             style={{
               alignItems: "center",
               position: "relative",
@@ -137,7 +144,7 @@ export const Header: React.FC = () => {
             Otimos Especialistas <br />
             Temos Otimos Profissionais,<br />
             Venha nos fazer uma visita.
-          </p>
+          </Paragraph>
         </div>
       </ContainerInfo>
     </Wrapper>

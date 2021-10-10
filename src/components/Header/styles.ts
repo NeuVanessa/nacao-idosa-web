@@ -44,3 +44,10 @@ export const ContainerInfo = styled.div`
   flex-direction: row;
   display: flex !important;
 `
+
+export const Paragraph = styled.p``
+export const BaseList = styled.ul``
+
+export const List = styled.li``
+export const Text = styled.h1``
+export const TextButton = styled.h5``
