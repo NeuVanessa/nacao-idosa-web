@@ -15,7 +15,7 @@ import {
 } from "./styles";
 import { NavItem } from "./items";
 import Legal from "../../../public/images/legal.png";
-import { LogoMarca } from "../../../public/images/logo";
+// import { LogoMarca } from "../../../public/images/logo";
 import { SimpleButtom, Image } from "../Button";
 import { MdAcUnit } from "@react-icons/all-files/md/MdAcUnit";
 import { HiSparkles } from "@react-icons/all-files/hi/HiSparkles";
@@ -25,10 +25,10 @@ export const Header: React.FC = () => {
   return (
     <Wrapper>
       <Container>
-        <img
+        {/* <img
           src={LogoMarca}
           style={{ width: 100, height: 40, overflow: "hidden" }}
-        />
+        /> */}
         <BaseList
           style={{
             marginRight: "2rem",
