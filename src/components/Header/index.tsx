@@ -15,7 +15,7 @@ import {
 } from "./styles";
 import { NavItem } from "./items";
 import Legal from "../../../public/images/legal.png";
-import { LogoMarca } from "../../../public/images/logo.jpg";
+import { LogoMarca } from "../../../public/images/logo";
 import { SimpleButtom, Image } from "../Button";
 import { MdAcUnit } from "@react-icons/all-files/md/MdAcUnit";
 import { HiSparkles } from "@react-icons/all-files/hi/HiSparkles";
