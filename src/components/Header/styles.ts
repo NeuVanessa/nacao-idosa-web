@@ -5,8 +5,9 @@ export const Wrapper = styled.header`
     center center no-repeat;
   background-size: cover;
   height: 100vh;
-`
 
+  
+`
 export const Container = styled.div`
   display: flex;
   height: 80px;

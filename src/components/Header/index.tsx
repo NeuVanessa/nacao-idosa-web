@@ -21,6 +21,15 @@ import { MdAcUnit } from "@react-icons/all-files/md/MdAcUnit";
 import { HiSparkles } from "@react-icons/all-files/hi/HiSparkles";
 import { GiDoctorFace } from "@react-icons/all-files/gi/GiDoctorFace";
 
+
+
+function Click() {
+  return (
+
+    alert('clicou nesse button')
+  )
+}
+
 export const Header: React.FC = () => {
   return (
     <> 
@@ -52,7 +61,7 @@ export const Header: React.FC = () => {
             );
           })}
         </BaseList>
-        <SimpleButtom to="/">
+        <SimpleButtom to="">
           <TextButton>ENTRE EM CONTATO </TextButton>
         </SimpleButtom>
       </Container>
